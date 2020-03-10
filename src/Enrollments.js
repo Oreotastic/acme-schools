@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Enrollments = ({students, schools,enrollments}) => {
+const Enrollments = ({students, schools, enrollments}) => {
   return(
     <div>
       <h1>Enrollments</h1>
@@ -9,7 +9,7 @@ const Enrollments = ({students, schools,enrollments}) => {
           enrollments.map(enrollment => {
             return(
               <li key={enrollment.id}>
-                x
+                
               </li>
             )
           })
