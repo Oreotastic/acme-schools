@@ -1,0 +1,119 @@
+body {
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 100%;
+}
+
+.create {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+.create-school {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.create-school input {
+  grid-row-start: 1;
+}
+
+.create-school button {
+  grid-row-start: 3;
+}
+
+.create-student {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.create-student input {
+  grid-row-start: 1;
+}
+
+.create-student select {
+  grid-row-start: 3;
+}
+
+.create-student button {
+  grid-row-start: 5;
+}
+
+.box {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.unenrolled {
+  width: 25vw;
+  min-height: 20vw;
+  text-align: center;
+}
+
+.unenrolled ul {
+  margin-top: 25px; 
+  list-style: none;
+  padding: 0;
+}
+
+.school-list {
+  padding: 0;
+  list-style: none;
+}
+
+.school-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.school {
+  width: 25vw;
+  min-height: 20vw;
+  text-align: center;
+  display: grid;
+  align-content: space-between; 
+}
+
+.select-student {
+  width: 100%;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-list li {
+  display: flex;
+  flex-direction: row;
+}
+
+.enrolled-student {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.enrolled-student a h5 {
+  margin: 0;
+}
+
+.schools-students {
+  display: flex;
+  flex-direction: row; 
+}
+
+.remove {
+  margin-top: 10vh;
+  color: red;
+}
